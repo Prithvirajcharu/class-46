@@ -13,7 +13,7 @@ function preload(){
    heart_1 = loadImage("assets/heart_1.png")
    heart_2 = loadImage("assets/heart_2.png")
    heart_3 = loadImage("assets/heart_3.png")
-   
+   zombie = loadImage("assets/zombie.png")
   bgImg = loadImage("assets/bg.jpeg")
 
 }
@@ -96,7 +96,7 @@ drawSprites();
 function  spawnzombie(){
   if(frameCount % 60 === 0) {
 var zombie = createSprite(500,150,10,10);
-   zombie.y  = Math.round(ramdom(80,150));
+   zombie.y  = Math.round(random(80,150));
     zombie.addImage( zombie_1);
     zombie.scale = 0.5;
    zombie.velocityX = -5;
